@@ -18,3 +18,11 @@ angka::angka(int i) {	//constructor
 	arr = new int[i];
 	isidata();
 }
+
+angka::~angka(){	//destructor
+	cout << endl;
+	cetakdata();
+	delete[]arr;
+	cout << "Alamat Array Sudah Dilepaskan" << endl;
+}
+
